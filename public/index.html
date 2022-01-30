@@ -1,43 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Creative Agency - Berserk HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="%PUBLIC_URL%/favicon.ico">
+    <meta name="theme-color" content="#2775FF">
+    <meta name="keywords" content="themeforest, theme, html, template">
+    <meta name="description" content="themeforest, theme, html, template">
+    <link rel="stylesheet" id="brk-direction-bootstrap" href="%PUBLIC_URL%/css/assets/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" id="brk-skin-color" href="%PUBLIC_URL%/css/skins/brk-blue.css">
+    <link id="brk-base-color" rel="stylesheet" href="%PUBLIC_URL%/css/skins/brk-base-color.css">
+    <link rel="stylesheet" id="brk-direction-offsets" href="%PUBLIC_URL%/css/assets/offsets.css">
+    <link id="brk-css-min" rel="stylesheet" href="%PUBLIC_URL%/css/assets/styles.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/vendor/revslider/css/settings.css">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="brk-loader">
+      <div class="brk-loader__loader"></div>
+    </div>
+    <div class="brk-theme-options" data-brk-library="brk-customizer">
+      <div class="brk-theme-options__panel">
+        <a href="%PUBLIC_URL%/#" class="panel-open brk-theme-options__panel-link"><i class="fal fa-cog"></i></a>
+        <a href="https://1.envato.market/Bd5V9" target="_blank" class="brk-theme-options__panel-link"><i class="fal fa-shopping-cart"></i></a>
+        <a href="https://www.youtube.com/watch?v=cZM8OoYu4So&feature=youtu.be" target="_blank" class="brk-theme-options__panel-link"><i class="fal fa-play-circle"></i></a>
+        <a href="https://nikadevs.ticksy.com/" target="_blank" class="brk-theme-options__panel-link"><i class="fal fa-comment-alt"></i></a>
+      </div>
+      <div class="brk-theme-options__control">
+        <div class="brk-theme-options__header">
+          <span class="font__family-montserrat font__weight-bold font__size-21 pl-30">Demo Options</span>
+          <div class="brk-theme-options__close panel-close"></div>
+        </div>
+        <div class="accordion accordion-slider-min" role="tablist" aria-multiselectable="true">
+          <div class="card expanded">
+            <a class="card-header" role="tab" id="heading_option_1" data-toggle="collapse" data-parent=".accordion-slider-min" href="%PUBLIC_URL%/#option_1" aria-expanded="true" aria-controls="option_1">
+              <h5 class="mb-0 font__family-montserrat font__weight-medium font__size-21 line__height-22">Layouts</h5>
+              <div class="card-toggle-icon">
+                <span class="before"></span>
+                <span class="after"></span>
+              </div>
+            </a>
+            <div id="option_1" class="collapse show" role="tabpanel" aria-labelledby="heading_option_1">
+              <div class="card-block">
+                <div class="brk-theme-options__wrap">
+                  <div class="row">
+                    <a href="%PUBLIC_URL%//demo_creative_agency.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-creative-agency.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_minimalistic_portfolio.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo_minimalistic_portfolio.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_freelance_blog.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-freelance-blog.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_agency_animation.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-agency-animation.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_winter_trip_agency.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo_winter_trip.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_website_agency.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-website-agency.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_saas.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo_saas.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_freelance_portfolio.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-freelance-portfolio.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_travel_agency.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-travel-agency.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_agency_fluid.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-agency-fluid.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_agency_modern.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-agency-modern.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_agency_urban.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-agency-urban.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_photography.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-photography.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_logistic.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-logistic.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_art.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-art.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_construction.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-construction.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_magazine.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-magazine.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_spa.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-spa.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_shop_drone.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-shop-drone.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_shop_video.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-shop-video.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_product_landing.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-product-landing.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_shop_modern.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-shop-modern.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_shop_electronics.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-shop-electronics.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_shop_clothes.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-shop-clothes.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_shop_trendy.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-shop-trendy.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//demo_product_sport.html" class="col-6 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_120" data-brk-bg-check="img/page-intro/demo-product-sport.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card-header collapsed" role="tab" id="heading_option_2" data-toggle="collapse" data-parent=".accordion-slider-min" href="%PUBLIC_URL%/#option_2" aria-expanded="false" aria-controls="option_2">
+              <h5 class="mb-0 font__family-montserrat font__weight-medium font__size-21 line__height-22">
+                Headers
+              </h5>
+              <div class="card-toggle-icon">
+                <span class="before"></span>
+                <span class="after"></span>
+              </div>
+            </a>
+            <div id="option_2" class="collapse" role="tabpanel" aria-labelledby="heading_option_2">
+              <div class="card-block">
+                <div class="brk-theme-options__wrap">
+                  <div class="row">
+                    <a href="%PUBLIC_URL%//header-1.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-01.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-2.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-02.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-3.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-03.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-4.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-04.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-5.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-05.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-6.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-06.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-7.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-07.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-8.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-08.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-9.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-09.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-10.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-10.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-11.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-11.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-12.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-12.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//header-13.html" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-header-13.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card-header collapsed" role="tab" id="heading_option_3" data-toggle="collapse" data-parent=".accordion-slider-min" href="%PUBLIC_URL%/#option_3" aria-expanded="false" aria-controls="option_3">
+              <h5 class="mb-0 font__family-montserrat font__weight-medium font__size-21 line__height-22">
+                Footers
+              </h5>
+              <div class="card-toggle-icon">
+                <span class="before"></span>
+                <span class="after"></span>
+              </div>
+            </a>
+            <div id="option_3" class="collapse" role="tabpanel" aria-labelledby="heading_option_3">
+              <div class="card-block">
+                <div class="brk-theme-options__wrap">
+                  <div class="row">
+                    <a href="%PUBLIC_URL%//footer.html#footer_1" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-01.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_2" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-02.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_3" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-03.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_4" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-04.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_5" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-05.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_6" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-06.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_7" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-07.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_8" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-08.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_9" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-09.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_10" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-10.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_11" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-11.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                    <a href="%PUBLIC_URL%//footer.html#footer_12" class="col-12 brk-theme-options-pathname nohash-animat">
+                      <div class="brk-theme-options__check brk-theme-options__check_60" data-brk-bg-check="img/page-intro/thumb-footer-12.jpg">
+                        <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card-header collapsed" role="tab" id="heading_option_4" data-toggle="collapse" data-parent=".accordion-slider-min" href="%PUBLIC_URL%/#option_4" aria-expanded="false" aria-controls="option_4">
+              <h5 class="mb-0 font__family-montserrat font__weight-medium font__size-21 line__height-22">
+                Skin
+              </h5>
+              <div class="card-toggle-icon">
+                <span class="before"></span>
+                <span class="after"></span>
+              </div>
+            </a>
+            <div id="option_4" class="collapse" role="tabpanel" aria-labelledby="heading_option_4">
+              <div class="card-block">
+                <div class="brk-theme-options__color">
+                  <div class="brk-theme-options__color-row">
+                    <div class="brk-theme-options__color-radio" data-skin="brk-blue" title="blue" style="--oc: #3f96f7">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-dark-blue" title="dark-blue" style="--oc: #0f5ae0">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-dark-blue-1" title="dark-blue-1" style="--oc: #2067dc">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-green" title="green" style="--oc: #08d75f">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-green-1" title="green-1" style="--oc: #00e0dd">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-purple" title="purple" style="--oc: #9f1dac">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-purple-pink" title="purple-pink" style="--oc: #815ce3">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-pink" title="pink" style="--oc: #f83365">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-red" title="red" style="--oc: #ff2775">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-red-demo" title="red-demo" style="--oc: #ef0000">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-yellow" title="yellow" style="--oc: #fdb415">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-gray-yellow" title="gray-yellow" style="--oc: #d0a05e">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-black" title="black" style="--oc: #121212">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-cold-blue" title="cold-blue" style="--oc: #1d3268">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-cyan" title="cyan" style="--oc: #23dae8">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-orange" title="orange" style="--oc: #ff9a1d">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-pink-purple" title="pink-purple" style="--oc: #cd2556">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                    <div class="brk-theme-options__color-radio" data-skin="brk-purple-1" title="purple-1" style="--oc: #6d52c2">
+                      <span></span>
+                      <i class="fal fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <a class="card-header collapsed" role="tab" id="heading_option_5" data-toggle="collapse" data-parent=".accordion-slider-min" href="%PUBLIC_URL%/#option_5" aria-expanded="false" aria-controls="option_5">
+              <h5 class="mb-0 font__family-montserrat font__weight-medium font__size-21 line__height-22">
+                Page Layout
+              </h5>
+              <div class="card-toggle-icon">
+                <span class="before"></span>
+                <span class="after"></span>
+              </div>
+            </a>
+            <div id="option_5" class="collapse" role="tabpanel" aria-labelledby="heading_option_5">
+              <div class="card-block">
+                <div class="font__size-16 line__height-26 brk-dark-font-color mt-10">Direction</div>
+                <div class="row pt-10">
+                  <a href="%PUBLIC_URL%/?dir=ltr" class="col-6" data-brk-direction="ltr">
+                    <div class="brk-theme-options__check brk-theme-options__check_45 brk-theme-options__check_title-on brk-theme-options__check_active">
+                      <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      <div class="brk-theme-options__check-title">LTR</div>
+                    </div>
+                  </a>
+                  <a href="%PUBLIC_URL%/?dir=rtl" class="col-6" data-brk-direction="rtl">
+                    <div class="brk-theme-options__check brk-theme-options__check_45 brk-theme-options__check_title-on">
+                      <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      <div class="brk-theme-options__check-title">RTL</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="font__size-16 line__height-26 brk-dark-font-color mt-15">Corners Style</div>
+                <div class="row pt-10">
+                  <a href="%PUBLIC_URL%/#" class="col-6" data-brk-options-border="0">
+                    <div class="brk-theme-options__check brk-theme-options__check_45 brk-theme-options__check_title-on brk-theme-options__check_active">
+                      <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      <div class="brk-theme-options__check-title">Default</div>
+                    </div>
+                  </a>
+                  <a href="%PUBLIC_URL%/#" class="col-6" data-brk-options-border="30">
+                    <div class="brk-theme-options__check brk-theme-options__check_45 brk-theme-options__check_title-on">
+                      <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      <div class="brk-theme-options__check-title">Square</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="font__size-16 line__height-26 brk-dark-font-color mt-15">Layout</div>
+                <div class="row pt-10">
+                  <a href="%PUBLIC_URL%/#" class="col-6" data-brk-layout="wide">
+                    <div class="brk-theme-options__check brk-theme-options__check_45 brk-theme-options__check_title-on brk-theme-options__check_active">
+                      <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      <div class="brk-theme-options__check-title">Wide</div>
+                    </div>
+                  </a>
+                  <a href="%PUBLIC_URL%/#" class="col-6" data-brk-layout="boxed">
+                    <div class="brk-theme-options__check brk-theme-options__check_45 brk-theme-options__check_title-on">
+                      <div class="brk-theme-options__before"><i class="fal fa-check"></i></div>
+                      <div class="brk-theme-options__check-title">Boxed</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style> #rev_slider_7_1_wrapper .tp-loader.spinner2{ background-color: #0071fc !important; } </style>
+    <style>.brk-btn-revs-video{border:solid 2px rgba(255,255,255,.14);font-family:Montserrat;text-transform:uppercase;text-decoration:none;font-size:15px;line-height:70px;color:#fff;font-weight:400;width:290px;height:70px;border-radius:37px;display:block;text-align:right;padding-right:41px;position:relative}.brk-btn-revs-video__wr-icon{position:absolute;top:50%;left:3px;transform:translateY(-50%);width:64px;height:64px;border-radius:50%;background-color:#fff;box-shadow:0 5px 16px rgba(0,0,0,.3)}.brk-btn-revs-video__wr-icon:before{content:'';position:absolute; top:-33px; left:-33px; right:-33px; bottom:-33px; transform:scale(1); opacity:.1; background-color:#fff; border-radius:50%; z-index:-1}.brk-btn-revs-video__wr-icon:after{content:''; position:absolute; top:-16px; left:-16px; right:-16px; bottom:-16px; opacity:.2; background-color:#fff; border-radius:50%; z-index:-1}.brk-btn-revs-video:hover .brk-btn-revs-video__wr-icon:before{animation:pulse-paused 1s ease-in infinite; animation-delay:0.2s}.brk-btn-revs-video:hover .brk-btn-revs-video__wr-icon:after{animation:pulse-paused 1s ease-in infinite}@-webkit-keyframes pulse-paused{0%{-webkit-transform:scale(1);   transform:scale(1)}20%{-webkit-transform:scale(1.2);   transform:scale(1.2)}60%{-webkit-transform:scale(0.9);   transform:scale(0.9);  opacity:0}100%{-webkit-transform:scale(1);   transform:scale(1)}}@keyframes pulse-paused{0%{-webkit-transform:scale(1);   transform:scale(1)}20%{-webkit-transform:scale(1.2);   transform:scale(1.2)}60%{-webkit-transform:scale(0.9);   transform:scale(0.9);  opacity:0}100%{-webkit-transform:scale(1);   transform:scale(1)}}.brk-btn-revs-video__icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:15px solid var(--brand-primary,#2775ff)}.brk-classic.tp-bullets{width:auto !important; display:flex; align-items:center; justify-content:center; box-sizing:border-box}.brk-classic.tp-bullets:before{content:''}.brk-classic .tp-bullet{position:relative !important; left:0 !important; background-color:transparent !important; float:left; width:12px; height:12px; border-radius:50%; border:1px solid transparent; margin:0 5px; padding:0; cursor:pointer}.brk-classic .tp-bullet:before{content:''; width:9px; height:9px; border:1px solid #fff; border-radius:50%; cursor:pointer; color:transparent; transition-property:width,height; transition-duration:.2s; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background-color:#2775FF}.brk-classic .tp-bullet:hover,.brk-classic .tp-bullet.selected{border-color:#a2a2a2; background-color:#fff !important}.brk-classic .tp-bullet:hover:before,.brk-classic .tp-bullet.selected:before{width:0; height:0; border:none}</style>
+    <style>.mt--230{margin-top: -230px;}@media (max-width: 991px){.mt--230{margin-top: 70px;}}.mt--337{margin-left: -337px;}@media (max-width: 1199px){.mt--337{margin-left: 0;}}@media (min-width: 1230px) {.image-map-creative_agency{width: 170%;left: -47%;top: 33px !important;}.image-map-desc-creative_agency {padding-top: 22% !important;padding-bottom: 12.5% !important;}}</style>
+    <script>function setREVStartSize(e){
+    try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+      if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+    }catch(d){console.log("Failure at Presize of Slider:"+d)}
+  };</script>
+    
+    <div class="main-page" id="root"></div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  </div>
+	<a href="#top" id="toTop"></a>
+	<script defer="defer" src="%PUBLIC_URL%/js/scripts.min.js"></script>
+	<script defer="defer" src="%PUBLIC_URL%/vendor/revslider/js/jquery.themepunch.tools.min.js"></script>
+	<script defer="defer" src="%PUBLIC_URL%/vendor/revslider/js/jquery.themepunch.revolution.min.js"></script>
+	<script defer="defer" src="%PUBLIC_URL%/vendor/revslider/js/extensions/revolution.extension.actions.min.js"></script>
+	<script defer="defer" src="%PUBLIC_URL%/vendor/revslider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script defer="defer" src="%PUBLIC_URL%/vendor/revslider/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script defer="defer" src="%PUBLIC_URL%/vendor/revslider/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script defer="defer" src="%PUBLIC_URL%/vendor/revslider/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script>
+		var revapi7,
+			tpj;
+		(function() {
+			if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad);
+			else onLoad();
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+			function onLoad() {
+				if (tpj === undefined) {
+					tpj = jQuery;
+					if ("on" == "on") tpj.noConflict();
+				}
+				if (tpj("#rev_slider_7_1").revolution == undefined) {
+					revslider_showDoubleJqueryError("#rev_slider_7_1");
+				} else {
+					revapi7 = tpj("#rev_slider_7_1").show().revolution({
+						startDelay: 100,
+						sliderType: "standard",
+						jsFileLocation: "vendor/revslider/js/",
+						sliderLayout: "fullscreen",
+						dottedOverlay: "none",
+						delay: 6000,
+						navigation: {
+							keyboardNavigation: "off",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation: "off",
+							mouseScrollReverse: "default",
+							onHoverStop: "off",
+							bullets: {
+								enable: true,
+								hide_onmobile: false,
+								style: "brk-classic",
+								hide_onleave: false,
+								direction: "horizontal",
+								h_align: "center",
+								v_align: "bottom",
+								h_offset: 0,
+								v_offset: 20,
+								space: 5,
+								tmp: ''
+							}
+						},
+						responsiveLevels: [1240, 1024, 778, 480],
+						visibilityLevels: [1240, 1024, 778, 480],
+						gridwidth: [1700, 1024, 768, 576],
+						gridheight: [960, 768, 960, 720],
+						lazyType: "none",
+						minHeight: "768",
+						parallax: {
+							type: "mouse+scroll",
+							origo: "enterpoint",
+							speed: 400,
+							speedbg: 0,
+							speedls: 0,
+							levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
+							disable_onmobile: "on"
+						},
+						shadow: 0,
+						spinner: "spinner2",
+						stopLoop: "off",
+						stopAfterLoops: -1,
+						stopAtSlide: -1,
+						shuffle: "off",
+						autoHeight: "off",
+						fullScreenAutoWidth: "on",
+						fullScreenAlignForce: "off",
+						fullScreenOffsetContainer: "",
+						fullScreenOffset: "",
+						disableProgressBar: "on",
+						hideThumbsOnMobile: "off",
+						hideSliderAtLimit: 0,
+						hideCaptionAtLimit: 0,
+						hideAllCaptionAtLilmit: 0,
+						debugMode: false,
+						fallbacks: {
+							simplifyAll: "off",
+							nextSlideOnWindowFocus: "off",
+							disableFocusListener: false,
+						}
+					});
+				}; /* END OF revapi call */
+			}; /* END OF ON LOAD FUNCTION */
+		}()); /* END OF WRAPPING FUNCTION */
+	</script>
+    
   </body>
 </html>
